@@ -17,6 +17,11 @@ namespace blog_template_practice.Models
 
         public string PublishDate { get; set; }
 
+        public Content()
+        {
+
+        }
+
         public Content(int id, string title, string body, string author, string publishDate)
         {
             Id = id;
