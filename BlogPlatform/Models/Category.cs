@@ -11,6 +11,11 @@ namespace blog_template_practice.Models
 
         public string Name { get; set; }
 
+        public Category()
+        {
+
+        }
+
         public Category(int id, string name)
         {
             Id = id;
