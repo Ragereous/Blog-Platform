@@ -11,6 +11,8 @@ namespace blog_template_practice.Models
 
         public string Name { get; set; }
 
+        public virtual IEnumerable<Content> Contents { get; set; }
+
         public Category()
         {
 
