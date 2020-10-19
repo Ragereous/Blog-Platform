@@ -17,6 +17,10 @@ namespace blog_template_practice.Models
 
         public string PublishDate { get; set; }
 
+        public int CategoryId { get; set; }
+
+        public virtual Category Category { get; set; }
+
         public Content()
         {
 
