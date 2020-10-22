@@ -20,11 +20,9 @@
 
     @foreach (var content in Model.Contents)
     {
-        <p>Title: @content.Title</p>
+        <p>Title: <a href="/Content/Details/@content.Id">@content.Title</a></p>
         <p>Author: @content.Author</p>
-        <p>@content.Body</p>
-        //PublishDate here
-        <p>Category: @Model.Name</p>
+        
         <hr />
     }
 

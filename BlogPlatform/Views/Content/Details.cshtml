@@ -1,0 +1,29 @@
+﻿@model blog_template_practice.Models.Content
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/Style/StyleSheet.css" />
+    <title>Details</title>
+</head>
+<body>
+    <p>Title: @Model.Title</p>
+    <p>Author: @Model.Author</p>
+    <p>Category: @Model.Category.Name</p>
+    @*PublishDate here*@
+    <p>@Model.Body</p>
+
+    <a href="/Content/Index/">See all blogs</a>
+
+    <a href="/Category/Index/">Return to Category List</a>
+
+
+</body>
+
+</html>
