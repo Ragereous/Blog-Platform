@@ -6,6 +6,7 @@ using blog_template_practice.Models;
 using blog_template_practice.Repositories;
 using Castle.DynamicProxy.Generators.Emitters.SimpleAST;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Win32;
 
 namespace blog_template_practice.Controllers
 {
@@ -41,6 +42,7 @@ namespace blog_template_practice.Controllers
         [HttpGet]
         public ViewResult CreateByCategoryId(int id)
         {
+            ViewBag.CategoryId = id;
             return View();
         }
 
@@ -52,7 +54,7 @@ namespace blog_template_practice.Controllers
             if (ModelState.IsValid)
             {
                 contentRepo.Create(content);
-                return RedirectToAction("");
+                return RedirectToAction("Details", "Category", new { id = content.CategoryId });
             }
             return View(content);
         }
@@ -70,7 +72,7 @@ namespace blog_template_practice.Controllers
             if (ModelState.IsValid)
             {
                 contentRepo.Update(content);
-                return RedirectToAction();
+                return RedirectToAction("Details", "Category", new { id = content.CategoryId });
             }
             return View();
         }
@@ -86,7 +88,7 @@ namespace blog_template_practice.Controllers
         public ActionResult Delete(Content content)
         {
             contentRepo.Delete(content);
-            return RedirectToAction("");
+            return RedirectToAction("Details", "Category", new { id = content.CategoryId });
         }
     }
 }
