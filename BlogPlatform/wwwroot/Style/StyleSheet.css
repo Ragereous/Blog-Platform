@@ -1,5 +1,7 @@
 ﻿body {
+    background-color: dimgray;
 }
+
 
 h1 {
     text-align: center;
@@ -20,13 +22,20 @@ a:any-link {
     grid-column-gap: 10px;
     justify-content: center;
     align-items: center;
-    background-color: rgb(128, 128, 128);
-    text-align: center;
+    /*    background-color: rgb(128, 128, 128);
+*/ text-align: center;
     height: 300px;
+    background-image: url(../Images/controller-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 16px;
 }
 
 .single-category {
     margin: 6px;
-    background-color: rgb(186, 140, 45);
+    background-color: #92b3ee;
     height: 50px;
+    opacity: 0.5;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
