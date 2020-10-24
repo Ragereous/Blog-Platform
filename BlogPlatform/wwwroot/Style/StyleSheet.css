@@ -1,0 +1,32 @@
+﻿body {
+}
+
+h1 {
+    text-align: center;
+}
+
+a:any-link {
+    text-decoration: none;
+    color: cornflowerblue;
+}
+
+.links-container {
+    text-align: center;
+}
+
+.category-container {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(128, 128, 128);
+    text-align: center;
+    height: 300px;
+}
+
+.single-category {
+    margin: 6px;
+    background-color: rgb(186, 140, 45);
+    height: 50px;
+}
