@@ -36,7 +36,7 @@
                 <span asp-validation-for="Author" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="CategoryId" class="control-label"></label>
+                @*<label asp-for="CategoryId" class="control-label"></label>*@
                 <input asp-for="CategoryId" class ="form-control" type="hidden" value="@ViewBag.CategoryId"/>
             </div>
             <div class="form-group">
@@ -47,7 +47,7 @@
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a href="/Category/Details/@ViewBag.CategoryId">Back to Category</a>
 </div>
 
 </body>
