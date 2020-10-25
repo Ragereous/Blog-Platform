@@ -10,7 +10,7 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="~/Style/StyleSheet.css" />
-    <title>Details</title>
+    <title>Blogger Gamer's Paradise</title>
 </head>
 <body>
     <h1 class="details-heading">Blogs for @Model.Name</h1>
@@ -19,7 +19,7 @@
         @foreach (var content in Model.Contents)
         {
             <div class="single-category-details-container">
-                <p>Title: <a href="/Content/Details/@content.Id">@content.Title</a></p>
+                <p><a href="/Content/Details/@content.Id">@content.Title</a></p>
                 <p>Author: @content.Author</p>
             </div>
         }
