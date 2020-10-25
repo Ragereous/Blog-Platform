@@ -10,10 +10,21 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="~/Style/StyleSheet.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
     <title>Index</title>
 </head>
 <body>
-    <h1>Category List</h1>
+    <h1>Blogger Gamer's Paradise</h1>
+
+    <div class="para-index-container">
+        <p>
+            I didn't prepare a cool intro to the website, so pretend this is award worthy writing. Imagination time!
+        </p>
+            
+        <p>
+            I typed up some game blogs for games I've played recently. The categories are below, while each category has a multiple blogs, authors and a post date. Sort of neat.
+        </p>
+    </div>
 
     <div class="category-container">
         @foreach (var category in Model)
@@ -27,7 +38,6 @@
     <div class="links-container">
         <a href="/Content/Index/">See all blogs</a>
     </div>
-
 
 </body>
 </html>

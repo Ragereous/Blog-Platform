@@ -1,19 +1,36 @@
-﻿body {
+﻿* {
+    font-family: 'Architects Daughter', cursive;
+}
+
+body {
     background-color: dimgray;
 }
 
 
 h1 {
     text-align: center;
+    text-decoration: underline;
+}
+
+.para-index-container {
+    display: grid;
+    grid-template-columns: 400px;
+    text-align: center;
+    width: 500px;
+    justify-content: space-around;
+    background-color: #92b3ee;
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 a:any-link {
     text-decoration: none;
-    color: cornflowerblue;
+    color: black;
 }
 
 .links-container {
     text-align: center;
+    margin: 16px;
 }
 
 .category-container {
@@ -25,8 +42,7 @@ a:any-link {
     /*    background-color: rgb(128, 128, 128);
 */ text-align: center;
     height: 300px;
-    background-image: url(../Images/controller-image.jpg);
-    background-repeat: no-repeat;
+    background: url(../Images/controller-image.jpg) no-repeat center;
     background-size: cover;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin: 16px;
