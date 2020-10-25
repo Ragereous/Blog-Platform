@@ -13,22 +13,26 @@
     <title>Details</title>
 </head>
 <body>
-    <h1>Blogs for @Model.Name</h1>
-    <hr />
+    <h1 class="details-heading">Blogs for @Model.Name</h1>
 
-    <h2>Blogs</h2>
+    <div class="category-details-container">
+        @foreach (var content in Model.Contents)
+        {
+            <div class="single-category-details-container">
+                <p>Title: <a href="/Content/Details/@content.Id">@content.Title</a></p>
+                <p>Author: @content.Author</p>
+            </div>
+        }
+    </div>
 
-    @foreach (var content in Model.Contents)
-    {
-        <p>Title: <a href="/Content/Details/@content.Id">@content.Title</a></p>
-        <p>Author: @content.Author</p>
-        
-        <hr />
-    }
-
-    <a href="/Content/CreateByCategoryId/@Model.Id">Create a Blog</a>
-
-    <a href="/Category/Index">Return to Category List</a>
+    <div class="links-container">
+        <div class="button">
+            <a href="/Content/CreateByCategoryId/@Model.Id">Create a Blog</a>
+        </div>
+        <div class="button">
+            <a href="/Category/Index">Return to Category List</a>
+        </div>
+    </div>
 
 
 </body>
