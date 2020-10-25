@@ -10,23 +10,26 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="~/Style/StyleSheet.css" />
-    <title>Details</title>
+    <title>Blogger Gamer's Paradise</title>
 </head>
 <body>
-    <p>Title: @Model.Title</p>
-    <p>Author: @Model.Author</p>
-    <p>Category: @Model.Category.Name</p>
-    <p>@Model.PublishDate</p>
-    <p>@Model.Body</p>
 
-    <p>
-        <a href="/Category/Index/">Return to Category List</a>
-        <a href="/Category/Details/@Model.Category.Id">Return to @Model.Category.Name List</a>
+    <div class="content-detail-container">
+        <p>Title: @Model.Title</p>
+        <p>Author: @Model.Author</p>
+        <p>Category: @Model.Category.Name</p>
+        <p>@Model.PublishDate</p>
+        <p>@Model.Body</p>
+    </div>
+
+    <p class="links-container">
+        <a class="button" href="/Category/Index/">Return to Category List</a>
+        <a class="button" href="/Category/Details/@Model.Category.Id">Return to @Model.Category.Name List</a>
     </p>
 
-    <p>
-        <a href="/Content/Delete/@Model.Id">Delete Blog</a>
-        <a href="/Content/Update/@Model.Id">Update Blog</a>
+    <p class="links-container">
+        <a class="button" href="/Content/Delete/@Model.Id">Delete Blog</a>
+        <a class="button" href="/Content/Update/@Model.Id">Update Blog</a>
     </p>
 
 
