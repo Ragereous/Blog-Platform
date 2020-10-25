@@ -1,5 +1,5 @@
 ﻿* {
-    font-family: 'Architects Daughter', cursive;
+    font-family: 'Fjalla One', sans-serif;
 }
 
 html {
@@ -9,7 +9,7 @@ html {
 body {
     height: 100%;
     background-color: dimgray;
-    background-image: linear-gradient(darkred, dimgray);
+    background-image: linear-gradient(dimgray, darkred);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }

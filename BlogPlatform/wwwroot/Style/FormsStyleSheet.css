@@ -1,2 +1,30 @@
-﻿body {
+﻿h3, h4 {
+    text-align: center;
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: 400px;
+    text-align: center;
+    width: 500px;
+    justify-content: space-around;
+    background-image: linear-gradient(rgb(209, 208, 208), dimgray);
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.col-sm-2, .col-sm-10 {
+    display: grid;
+    justify-content: center;
+}
+
+.col-sm-10 {
+    border-bottom: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: black;
+    margin: 8px;
+}
+
+.form-group {
+    margin: 16px;
 }
