@@ -10,15 +10,17 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Update</title>
+    <link rel="stylesheet" href="~/Style/FormsStyleSheet.css" />
+    <link rel="stylesheet" href="~/Style/StyleSheet.css" />
+    <title>Blogger Gamer's Paradise</title>
 </head>
 <body>
 
-<h4>Content</h4>
-<hr />
+<h4>Modify a blog</h4>
+
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Update">
+        <form class="form-container" asp-action="Update">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Id" />
             <div class="form-group">
@@ -52,13 +54,10 @@
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>
+
+            <a class="button" href="/Category/Details/@Model.CategoryId">Back to Category</a>
         </form>
     </div>
 </div>
-
-<div>
-    <a href="/Category/Details/@Model.CategoryId">Back to Category</a>
-</div>
-
 </body>
 </html>
