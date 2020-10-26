@@ -10,23 +10,27 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="~/Style/StyleSheet.css" />
-    <title>Index</title>
+    <title>Blogger Gamer's Paradise</title>
 </head>
 <body>
-    <h1>All Blogs</h1>
-    <div class="category-container">
+    <h1 class="content-index-heading">All Blogs</h1>
+
+    <div class="content-index-container">
         @foreach (var content in Model)
         {
             <div class="single-content">
                 <p><a href="/Content/Details/@content.Id">@content.Title</a></p>
-                Author: @content.Author
+                <p>Author: @content.Author</p>
                 @*Category: @content.Category.Name*@
-                <hr />
             </div>
         }
     </div>
 
-    <a href="/Category/Index/">Return to Category List</a>
+    <div class="links-container">
+        <div class="button">
+            <a href="/Category/Index/">Return to Category List</a>
+        </div>
+    </div>
 
 
 </body>
