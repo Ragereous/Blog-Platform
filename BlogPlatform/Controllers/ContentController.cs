@@ -87,8 +87,9 @@ namespace blog_template_practice.Controllers
         [HttpPost]
         public ActionResult Delete(Content content)
         {
+            int tempCategoryId = content.CategoryId;
             contentRepo.Delete(content);
-            return RedirectToAction("Details", "Category", new { id = content.CategoryId });
+            return RedirectToAction("Details", "Category", new { id = tempCategoryId });
         }
     }
 }
